@@ -18,6 +18,10 @@ public class HardcodedLogin {
         if (username == "admin" && password == "qwerty") {
             return true;
         }
-        else ()     
+        else if (username == "user" && password =="password") { 
+            return true;
+        } else {
+            return false;
+        }     
     }
 }
