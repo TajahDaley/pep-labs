@@ -26,7 +26,8 @@ public class MapExercise {
      * so here Integer is a wrapper for int.
      */
     public Map<Integer, String> createMap(){
-        return null;
+        Map<Integer, String> newThings = new Map<Integer, String>();
+        return newThings;
     }
 
     /**
