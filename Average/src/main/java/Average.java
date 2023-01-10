@@ -8,7 +8,7 @@ public class Average {
      * even in operations where they should! (eg: 3/2=1 if 3 is of type int.)
      *
      * So, before you divide the sum of all numbers by the amount of numbers in order to produce the average,
-     * you'll need do convert the sum to type double. How can we do that?
+     * you'll need to convert the sum to type double. How can we do that?
      *
      * One of the best resources for answering technical questions is StackOverflow. You should familiarize yourself
      * with that site. Here is someone asking how an int might be converted into a double, with several
@@ -18,6 +18,15 @@ public class Average {
      * @return the average of all the values of nums.
      */
     public double getAvg(int[] nums){
-        return 0;
+        double sum = 0;
+        int length = nums.length;
+
+        for (int i = 0; i < nums.length; i++){
+            sum += nums[i];
+        }
+        double average = sum / length;
+
+        return average;
+
     }
 }
