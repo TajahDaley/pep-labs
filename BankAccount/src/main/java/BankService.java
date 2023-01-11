@@ -32,7 +32,11 @@ public class BankService {
      * If a withdrawl would result in the user having a negative balance, the withdrawl should not occur.
      * @param amount the amount to be withdrawn.
      */
-    public double withdraw(double amount){
+    public void withdraw(double amount){
+        if (balance >= amount) {
+            this.balance -= amount;
+        }
+
         
     }
 
