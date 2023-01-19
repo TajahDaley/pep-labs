@@ -13,9 +13,8 @@ public class JavalinSingleton {
      */
     public static Javalin getInstance(){
         Javalin app = Javalin.create();
+    
         
-        //write endpoint here
-
         return app;
     }
     
