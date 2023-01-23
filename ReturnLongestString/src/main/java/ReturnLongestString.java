@@ -9,11 +9,11 @@ public class ReturnLongestString {
      */
     public String longest(String[] arr){
         int index = 0;
-        int newLength = arr[0].length();
+        int longest = arr[0].length();
         
-        for (int i = 1;i < arr.length;i++) { 
-            if (arr[i].length() > newLength); {
-                index = i; newLength = arr[i].length();
+        for (int i = 0;i < arr.length;i++) { 
+            if (arr[i].length() > longest); {
+                index = i; longest = arr[i].length();
             }
         }
         return arr[index];
