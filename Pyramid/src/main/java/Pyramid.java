@@ -27,10 +27,10 @@ public class Pyramid {
      * @return a string representation of the pyramid.
      */
     public String returnPyramid(int n){
-        String star = " ";
+        String star = "";
 
-        for (int i = 0;i <= n;i++){
-            for (int j =0; j < 1;j++) {
+        for (int i = 1;i <= n;i++){
+            for (int j =0; j < i;j++) {
                 star += "*";
             }
             star += "\n";
