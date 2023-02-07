@@ -1,6 +1,7 @@
 package Application.DAO;
 
 import Application.Util.ConnectionUtil;
+import javafx.css.CompoundSelector;
 import Application.Model.Book;
 
 import java.sql.Connection;
@@ -114,10 +115,11 @@ public class BookDAO {
         List<Book> books = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "SELECET * FROM book WHERE ";
+            String sql = "SELECET COUNT * FROM book WHERE copies_available > ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
+            preparedStatement.setInt(1, copies_available);
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
