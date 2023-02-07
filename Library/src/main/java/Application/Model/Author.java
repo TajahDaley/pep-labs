@@ -73,6 +73,4 @@ public class Author {
                 '}';
     }
 
-    public void add(Author author) {
-    }
 }
