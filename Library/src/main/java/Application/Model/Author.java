@@ -72,4 +72,7 @@ public class Author {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    public void add(Author author) {
+    }
 }
