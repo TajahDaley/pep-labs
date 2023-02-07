@@ -821,7 +821,7 @@
       getAllAuthorsDAOTest: 1
       insertAuthorCheckWithGetAllTest: 1
       getAllAuthorsServiceTest: 1
-      addAuthorTest: 0
+      addAuthorTest: 1
       getAllBooksTest: 1
       getBookByIsbnTest: 1
       insertBookCheckWithGetAllTest: 0
@@ -829,7 +829,7 @@
       getBooksWithBookCountOverZeroTest: 0
       getAllBooksTest1: 1
       addBookVerifyNotNullOnSuccessfulAddTest: 0
-      addBookVerifyNullOnUnsuccessfulAdd: 1
+      addBookVerifyNullOnUnsuccessfulAdd: 0
       getAllAvailableBooksTest: 0
   AdvancedBooleans:
     :Week: 7
